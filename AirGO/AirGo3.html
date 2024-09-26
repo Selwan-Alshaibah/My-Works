@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AirGo</title>
+	<style >
+		*{
+			box-sizing:border-box ;
+      
+		}
+
+		body{
+			margin: 0;
+		}
+		a{
+	text-decoration: none;
+	padding: 20px;
+	color: white;
+	outline: 0 !important;
+  border: 0 !important;
+  width: 140px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+.nav-container {
+  display: flex;
+  width: 800px;
+  height: 45px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    rgba(0, 73, 144, 0.5) 5px 10px 15px;
+  transition: all 0.5s;
+  position: static;
+  margin-left: 350px;
+  margin-top: 50px;
+    background-color: darkblue;
+  opacity: 0.5;
+}
+.nav-container:hover {
+  transition: all 0.5s;
+}
+
+
+
+a:hover {
+  transform: translateY(-3px);
+}
+
+.row{
+  display: flex;
+  justify-content: space-around;
+
+}
+.cu{
+  flex: 1;
+  margin: 50px;
+
+  }
+
+
+.card {
+  position: relative;
+  width: 370px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-top: 45px;
+}
+
+
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+.footer{
+    position: absolute;
+  padding-left: 50px;
+  padding-bottom:50px ;
+  font-size: 15px;
+  color: black;
+}
+.logo{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  margin-left: 150px;
+}
+@media (max-width: 600px) {
+   .nav-container {  
+           flex-direction: column;
+   margin-left: 50px;
+   margin-top: 150px;
+
+     width: 290px;
+  height: 500px;
+  }
+  .row{
+        flex-direction: column;
+
+  }
+  .logo{
+margin: -120px;
+   margin-left: 150px;
+
+}
+
+}
+@media (max-width: 992px) {
+   .nav-container {  
+           flex-direction: column;
+   margin-left: 290px;
+   margin-top: 150px;
+
+     width: 290px;
+  height: 500px;
+  }
+  .row{
+        flex-direction: column;
+
+  }
+  .logo{
+margin: -120px;
+   margin-left: 400px;
+
+}
+
+}
+
+@media (max-width: 600px) {
+   .nav-container {  
+           flex-direction: column;
+   margin-left: 150px;
+   margin-top: 150px;
+
+     width: 290px;
+  height: 500px;
+  }
+  .row{
+        flex-direction: column;
+
+  }
+  .logo{
+margin: -120px;
+   margin-left: 250px;
+
+}
+
+}
+
+	</style>
+</head>
+<body>
+        <img src="logoo.png" class="logo">
+   <!--     <img src="pl.jpg" style=" position: absolute;
+            opacity: 0.5;
+            z-index: -1;
+            width: 100%;
+            height: 100vh;
+            margin-top: -52px;
+            padding: 0; "> -->
+
+
+<div class="nav-container">
+		
+<a href="AirGo.html" target="_blank"> Home </a>
+		<a href="AirGo2.html" target="_blank">About Us</a>
+			<a href="AirGo3.html">Flights</a>
+		<a href="AirGo4.html">Service </a>
+			<a href="AirGo5.html" target="_blank">Countact us</a>
+
+	</div>
+<div class="row">
+
+<div class="cu">
+<div class="card">
+  <img src="pa.jpg"height="240" width="400" >
+  <div class="card__content">
+    <p class="card__title">Paris</p>
+    <p class="card__description">Paris is the capital and most populous city of France.  It's a center for finance, diplomacy, commerce, fashion, and gastronomy.   Nicknamed the "City of Light" because of its early adoption of street lighting, Paris has also been a leader in the arts and sciences.  The Seine River winds through the city, adding to its charm.
+
+pen_spark
+</p>
+</div>
+  </div>
+  <div class="card"  style="margin-left:30px ;">
+  <img src="du.jpg"height="240" width="400" >
+  <div class="card__content">
+    <p class="card__title">Dubai</p>
+    <p class="card__description">
+Dubai, a flashy city in the UAE, is a dazzling mix of modern marvels and ancient souks. From the world's tallest tower, the Burj Khalifa, to thrilling desert adventures, Dubai offers something for everyone.
+</p>
+</div>
+  </div>
+</div>
+<div class="cu">
+<div class="card">
+  <img src="ge.jpg"height="240" width="400" >
+  <div class="card__content">
+    <p class="card__title">Germany</p>
+    <p class="card__description">Germany in a nutshell:
+
+Land of castles & cathedrals: Packed with history, from medieval castles to grand cathedrals like Cologne's.
+Beer lover's paradise: Famous for its brews, with Oktoberfest a world-renowned celebration.
+Tech & innovation hub: A leader in engineering and home to car giants like BMW and Mercedes.</p>
+  </div>
+</div>
+<div class="card"  style="margin-left:30px ;">
+  <img src="lo.jpg"height="240" width="400" >
+  <div class="card__content">
+    <p class="card__title">London</p>
+    <p class="card__description">London, the beating heart of England, is a vibrant metropolis steeped in history and buzzing with culture. Founded nearly two millennia ago, it's one of the world's oldest major cities.Explore iconic landmarks like Buckingham Palace, the residence of the British Royal Family, and the Houses of Parliament, where Big Ben chimes.
+
+pen_spark
+</p>
+  </div>
+</div>
+</div>
+
+<div class="cu">
+<div class="card">
+ <img src="eg.jpg"height="240" width="400" >
+  <div class="card__content">
+    <p class="card__title">Egypt</p>
+    <p class="card__description">Here's Egypt in an even tinier nutshell:
+
+Pyramids & Sphinxes: Gigantic pyramids and the enigmatic Sphinx at Giza - iconic wonders.
+Nile Magic: Sail down the Nile, the lifeblood of Egypt, for a journey through history.
+Beach Bliss: Relax on the Red Sea coast with its crystal-clear waters and vibrant coral reefs.</p>
+
+  </div>
+</div>
+<div class="card"  style="margin-left:30px ;">
+ <img src="ne.jpg"height="240" width="400" >
+  <div class="card__content">
+    <p class="card__title">Netherland</p>
+    <p class="card__description">The Netherlands, often called Holland, is a tiny European country with a big personality. Famous for its windmills, tulips, and canals, it's also a land of progressive ideas and delicious cheese.</p>
+
+  </div>
+</div>
+
+
+</div>
+
+			</div>	
+      <div class="footer">Copy Right &copy; by airline</div>
+
+
+</body>
+</html>
